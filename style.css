@@ -1,0 +1,116 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body,html {
+    width:100vw;
+    height:100vh;
+    background:#343445;
+    color:white;
+    overflow-x:hidden;
+    text-shadow: 0 0 5px black;
+}
+
+header {
+    position:sticky;
+    top:0px;
+    z-index:999;
+}
+
+h1 {
+    font-family:cursive;
+    color:#da2323;
+    font-size:40px
+}
+
+h1,h2,h3 {
+    text-align:center;
+}
+
+hr {
+    border:none;
+    background:#9a1212;
+    height:2px;
+    width:95%;
+    margin: 2px auto;
+}
+
+.zestawy {
+    margin-top:20px;
+    width:50%;
+    height:90%;
+    float:left;
+}
+
+.zestawy h3 {
+    margin-top: -5px
+}
+
+.bombki {
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
+
+.zestaw hr {
+    margin: 10px auto;
+    width:40%;
+}
+
+.zestaw img {
+    width:13vw;
+    height:13vw;
+    border-radius:10px;
+    box-shadow:0 0 20px 5px black;
+    margin-top:5px;
+}
+
+.zamowienie {
+    width:50%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    position:relative;
+    flex-wrap:wrap;
+}
+
+.zamowienie h2 {
+    color: #da2323;
+    letter-spacing: 5px;;
+}
+
+.zamowienie div {
+    z-index:10;
+    margin-top:100px;
+}
+
+.zamowienie img {
+    position:absolute;
+    z-index:0;
+    top:20px;
+    width:20vh;
+}
+
+p,button {
+    display:block;
+    text-align:center;
+    margin: 30px auto;
+}
+
+#ilosc1 {
+    width:43px;
+}
+
+#rachunek {
+    width:80%;
+    padding:1px;
+    outline:2px solid blue;
+    border-radius:20px;
+    background: rgba(0,0,255,0.2);
+    margin: 0 auto;
+    display:none;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Hurtownia Bombek SantaClaus</h1>
+        <hr>
+        <hr>
+    </header>
+    <div class="zestawy">
+        <h2>Zestawy:</h2>
+        <div class="zestaw">
+            <hr>
+            <h3>Zestaw nr 1 (12.50zł)</h3>
+            <div class="bombki">
+            <img src="b1.jpg" alt="">
+            <img src="b1.jpg" alt="">
+            <img src="b1.jpg" alt="">
+            </div>
+        </div>
+        <div class="zestaw">
+            <hr>
+            <h3>Zestaw nr 2 (17.50zł)</h3>
+            <div class="bombki">
+            <img src="b2.jpg" alt="">
+            <img src="b2.jpg" alt="">
+            <img src="b2.jpg" alt="">
+            </div>
+        </div>
+        <div class="zestaw">
+            <hr>
+            <h3>Zestaw nr 3 (15.50zł)</h3>
+            <div class="bombki">
+            <img src="b3.jfif" alt="">
+            <img src="b3.jfif" alt="">
+            <img src="b3.jfif" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="zamowienie">
+        <img src="choinka.png" alt="">
+        <div>
+            <h2>Dokonaj zamówienia:</h2>
+            <p>Numer zestawu: <select id="zestaw1" name="zestawy">
+                <option value="Zestaw nr 1">Zestaw nr 1</option>
+                <option value="Zestaw nr 2">Zestaw nr 2</option>
+                <option value="Zestaw nr 3">Zestaw nr 3</option>
+            </select>
+            </p>
+            <p>Ilość pudełek: <input type="number" min="1" max="100" id="ilosc1"></p>
+            <p>Jestem stałym klientem: <input type="checkbox" id="staly"></p>
+            
+            <button onclick="zamowienie()">Przelicz zamówienie</button>
+
+            <div id="rachunek">
+                <p>dokonałeś zamówienia na <span id="zestaw2"></span>.</p>
+                <p>Ilość zamówionych pudełek: <span id="ilosc2"></span></p>
+                <p>Koszt zamówienia wynosi <span id="cena"></span>zł.</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
